@@ -1,0 +1,70 @@
+/* Site Stylesheet
+  1. NAV BAR 
+  2. HEADER IMG 
+ 
+======================================== */
+:root{
+    --helvetica-font: helvetica;
+    --black-bkg: black;
+    --color-font: seashell;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--helvetica-font);
+}
+
+body{
+    background-color: var(--black-bkg);
+}
+
+
+ /* navigation 
+ ======================================== */
+nav {
+    position: fixed;
+    border-bottom: 1px solid var(--color-font);
+    width: 100%;
+    max-height: 69px;
+
+}
+.nav_background{
+    display: flex;
+    background-color: var(--black-bkg);
+     width: 100%;   
+    align-items: center;
+    justify-content: space-between;
+     
+}
+
+.nav_logo{
+    opacity: 0.9;
+   color: var(--color-font);
+    margin-left: 10px;
+    align-items: center;
+   
+
+
+}
+
+.nav_ul{
+   
+   list-style:none;
+
+}
+
+.nav_ul > li {
+    display: inline-flex;
+    color: var(--color-font);
+   justify-content: flex-end;
+   text-decoration: underline;
+   margin:0  10px;
+   padding: 0 10px;
+   cursor: pointer;
+   opacity: 0.9;
+   font-size: 25px;
+   
+    
+}
