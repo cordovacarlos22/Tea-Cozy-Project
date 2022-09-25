@@ -24,10 +24,7 @@ body{
  /* navigation 
  ======================================== */
 nav {
-    position: fixed;
-    border-bottom: 1px solid var(--color-font);
-    width: 100%;
-    max-height: 69px;
+    
 
 }
 .nav_background{
@@ -36,6 +33,9 @@ nav {
      width: 100%;   
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    border-bottom: 1px solid var(--color-font);
+    max-height: 69px;
      
 }
 
@@ -44,6 +44,9 @@ nav {
    color: var(--color-font);
     margin-left: 10px;
     align-items: center;
+    width:100px;
+    height: 50px;
+    margin: 5px;
    
 
 
