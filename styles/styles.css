@@ -1,0 +1,434 @@
+/* Site Stylesheet
+  1. NAV BAR 
+  2. HEADER IMG 
+  3.Section 1 
+ 
+======================================== */
+:root{
+    --helvetica-font: helvetica;
+    --black-bkg: black;
+    --color-font: seashell;
+   
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--helvetica-font);
+}
+
+body{
+    background-color: var(--black-bkg);
+    opacity: 0.9;
+    font-size: 22px;
+}
+
+
+ /* navigation 
+ ======================================== */
+
+.nav_background{
+    display: flex;
+    background-color: var(--black-bkg);
+     width: 100%;   
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    border-bottom: 1px solid var(--color-font);
+    max-height: 69px;
+     
+}
+
+.nav_logo{
+    opacity: 0.9;
+   color: var(--color-font);
+    margin-left: 10px;
+    align-items: center;
+  
+    height: 50px;
+    margin: 5px;
+   
+
+
+}
+
+.nav_ul{
+   
+   list-style:none;
+
+}
+
+.nav_ul > li {
+    display: inline-flex;
+    color: var(--color-font);
+   justify-content: flex-end;
+   text-decoration: underline;
+   margin:0  10px;
+   padding: 0 10px;
+   cursor: pointer;
+   opacity: 0.9;
+   font-size: 25px;
+}
+
+ /* header
+ ======================================== */
+.header_main-cotainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../resources/img/img-mission-background.jpeg);
+    min-height: 700px;
+    background-repeat: no-repeat;
+    background-position: center;
+   background-size: cover;
+}   
+
+.background{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    height: auto;
+    color: var(--color-font);
+    min-height: 100px;
+    flex-wrap: wrap;
+    padding: 2px;
+}
+
+
+.nav_menu{
+    display: none;
+}
+
+/* Section 1 
+ ======================================== */
+
+.section1{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+}
+/* Figure 
+ ======================================== */
+
+.figure_cards-container1{
+    display:flex;
+    color: var(--color-font);
+    grid-template-columns: 5;
+    grid-template-rows: 2;
+    gap: 2px;
+    text-align: center;
+    margin-top: 20px;
+  justify-content: center;
+    flex-wrap: wrap;
+}
+.figure_cards-container2{
+    display:flex;
+    color: var(--color-font);
+    grid-template-columns: 5;
+    grid-template-rows: 2;
+    text-align: center;
+    margin-top: 20px;
+   justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-img
+{
+    width: 300px;
+    height: 200px;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+
+
+
+
+/* aside
+ ======================================== */
+
+
+
+aside{
+    display: inline-block;
+    background-image: url(../resources/img/img-locations-background.jpeg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
+    justify-content: center;
+    background-position: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    
+
+}
+
+aside > h1{
+    color: var(--color-font);
+    text-align: center;
+    justify-content: center;
+    margin-top: 15px;
+
+    
+}
+
+.aside_cards-container{
+    display:flex;
+    align-items: center;
+    text-align: center;
+    flex-wrap:wrap;
+    justify-content: center;
+    gap: 5px;
+    color: var(--color-font);
+    opacity: 1;
+    gap: 40px;
+    margin-top: 20px;
+    
+   
+    
+}
+
+.aside_cards1{
+    background-color: var(--black-bkg);
+    width: 300px;
+    min-height: 220px;
+    padding: 5px;
+   
+    
+    
+    
+   
+}
+
+.aside_cards2{
+    background-color:var(--black-bkg);
+    width: 300px;
+    padding: 5px;
+ 
+   
+    
+    
+   
+}
+
+.aside_cards3{
+    background-color:var(--black-bkg);
+    width: 300px;
+    min-height: 220px;
+    padding: 5px;
+    
+    
+   
+}
+
+.aside_paragraph{
+    line-height: 60px;
+    line-break: 60px;
+    
+}
+
+
+
+
+/* Foooter */
+/*======================================== */
+
+.footer_title,
+.footer_email,
+.footer_phone{
+    display:flex;
+    color: var(--color-font);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 15px;
+    flex-direction: column;
+}
+
+.footer_span{
+    color: var(--color-font);
+
+
+
+}
+
+
+
+
+
+
+/* MediasQueries */
+/*======================================== */
+
+/* Extra small devices (phones, 600px and less) */
+
+
+@media only screen and (max-width: 600px) {
+    
+
+}
+
+/* Small devices (vertical tablets and large phones, 317pxpx and up) */
+@media only screen and (min-width: 317px) {
+    
+    .nav_menu{
+        display:flex;
+        width: 50px;
+        height: 40px;
+        margin: 5px;
+    }   
+    .nav_ul{
+        display: none;
+    }
+
+
+    .header_sub-title{
+        margin: 2px;
+        font-size: 8px;
+    }
+
+    .aside_cards1{
+        background-color: var(--black-bkg);
+        width: 300px;
+       min-height: 120px;
+        padding: 5px;
+       
+        
+        
+        
+       
+    }
+    
+    .aside_cards2{
+        background-color:var(--black-bkg);
+        min-height: 125px;
+       
+        padding: 5px;
+     
+       
+        
+        
+       
+    }
+    
+    .aside_cards3{
+        background-color:var(--black-bkg);
+        width: 300px;
+        min-height: 125px;
+        padding: 5px;
+        
+        
+       
+    }
+    
+    .aside_paragraph{
+        line-height: 20px;
+        line-break: 5px;
+        
+    }
+
+   
+
+}
+
+/* Small devices (vertical tablets and large phones, 600px and up) */
+@media only screen and (min-width: 590px) {
+
+
+    .nav_menu{
+        display:none;
+    }   
+    .nav_ul{
+        display: flex;
+    }
+
+    .header_sub-title{
+        margin: 2px;
+        font-size: 20px;
+    }
+
+    .aside_cards1{
+        background-color: var(--black-bkg);
+        width: 300px;
+        min-height: 220px;
+        padding: 5px;
+       
+        
+        
+        
+       
+    }
+    
+    .aside_cards2{
+        background-color:var(--black-bkg);
+        width: 300px;
+        padding: 5px;
+     
+       
+        
+        
+       
+    }
+    
+    .aside_cards3{
+        background-color:var(--black-bkg);
+        width: 300px;
+        min-height: 220px;
+        padding: 5px;
+        
+        
+       
+    }
+    
+    .aside_paragraph{
+        line-height: 60px;
+        line-break: 60px;
+        
+    }
+  
+
+}
+
+
+
+/* Medium devices (horizontal tablets, 768px and above) */
+@media only screen and (min-width: 768px) {
+
+    .header_sub-title{
+        margin: 2px;
+        font-size: 18px;
+    }
+
+}
+
+    
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .header_sub-title{
+        margin: 2px;
+        font-size: 26px;
+    }
+   
+
+}
+
+
+
+/* Extra large devices (Large laptops and desktops, 1200px and above) */
+@media only screen and (min-width: 1000px) {
+    .header_sub-title{
+        margin: 2px;
+        font-size: 45px;
+    }
+
+
+}
